@@ -27,5 +27,5 @@ python3 onnx_export.py --model-dir=models/
 After you have the exported onnx model file, you can run it using a test diseased leaf image using this command:
 
 `
-imagenet.py --model=data/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/cat/01.jpg cat.jpg
+imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/AppleCedarRust1.JPG output.JPG
 `
