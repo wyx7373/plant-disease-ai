@@ -13,7 +13,7 @@ Make sure the current directory is the repository folder.
 Run the train.py file in the repository folder using the following command:
 
 `
-python3 train.py--model-dir=models/garbage_classification data/garbage-data-main
+sudo python3 train.py --model-dir=models/ data/
 `
 
 ## Export the model
