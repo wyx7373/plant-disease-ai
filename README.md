@@ -29,13 +29,13 @@ Make sure the current directory is the repository folder.
 Run the train.py file in the repository folder using the following command:
 
 `
-python train.py --model-dir=models/ data/
+python train.py -b=20 --epochs=30 --gpu=0 data/
 `
 
-Example command specifying epochs and batch size:
+Example command continuing the previous training session:
 
 `
-python train.py --model-dir=models -b=20 --gpu=0 --epochs=25 data
+python train.py --resume=models/checkpoint.pth.tar -b=20 --epochs=30 --gpu=0 data/
 `
 
 ## Export the model
