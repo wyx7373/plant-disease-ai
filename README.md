@@ -1,11 +1,8 @@
 # plant-disease-ai
-
-
-## Algorithm
-This AI is built with the ImageNet classification trained on thousands of plant photo data using Resnet-18 and PyTorch.
+This AI is built with the ImageNet classification trained on thousands of plant photo data using Resnet-18 and PyTorch. The purpose of this project is to give gardeners/farmers/botanists the ability to easily identify the sickness a plant has (if it has one).
 
 ## Setup
-Pull the repository to the Jetson Nano home directory. Make sure the jetson-inference and pytorch libraries are installed.
+Pull the repository to the Jetson Nano home directory. Make sure the jetson-inference and pytorch libraries are installed (as well as the proper dependencies).
 
 ## Train
 Make sure the current directory is the repository folder.
@@ -14,6 +11,12 @@ Run the train.py file in the repository folder using the following command:
 
 `
 sudo python3 train.py --model-dir=models/ data/
+`
+
+Example command specifying epochs and batch size:
+
+`
+sudo python3 train.py --model-dir=models -b=20 --gpu=0 --epochs=25 data
 `
 
 ## Export the model
