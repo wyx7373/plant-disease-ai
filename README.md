@@ -29,13 +29,13 @@ Make sure the current directory is the repository folder.
 Run the train.py file in the repository folder using the following command:
 
 `
-sudo python3 train.py --model-dir=models/ data/
+python train.py --model-dir=models/ data/
 `
 
 Example command specifying epochs and batch size:
 
 `
-sudo python3 train.py --model-dir=models -b=20 --gpu=0 --epochs=25 data
+python train.py --model-dir=models -b=20 --gpu=0 --epochs=25 data
 `
 
 ## Export the model
