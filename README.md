@@ -1,5 +1,7 @@
 # plant-disease-ai
-This AI is built with the ImageNet classification trained on thousands of plant photo data using Resnet-18 and PyTorch. The purpose of this project is to give gardeners/farmers/botanists the ability to easily identify the sickness a plant has (if it has one).
+
+## The Algorithm
+This AI system utilizes PyTorch, a deep learning framework, along with the "jetson-inference" library. It employs a ResNet-18 model trained on a dataset of plant photos to identify signs of sickness. By leveraging the power of deep learning and the pre-trained ResNet-18 architecture, this AI system can analyze plant images, detect symptoms of sickness, and potentially aid in early diagnosis, providing valuable insights to farmers and researchers in the field of agriculture.
 
 ## Setup
 Pull the repository to the Jetson Nano home directory. Make sure the jetson-inference and pytorch libraries are installed (as well as the proper dependencies).
