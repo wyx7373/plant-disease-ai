@@ -58,7 +58,7 @@ parser.add_argument('--model-dir', type=str, default='models',
 parser.add_argument('-a', '--arch', metavar='ARCH', default='resnet18',
                     choices=model_names,
                     help='model architecture: ' + ' | '.join(model_names) + ' (default: resnet18)')
-parser.add_argument('--resolution', default=224, type=int, metavar='N',
+parser.add_argument('--resolution', default=400, type=int, metavar='N',
                     help='input NxN image resolution of model (default: 224x224) '
                          'note than Inception models should use 299x299')
 parser.add_argument('-j', '--workers', default=2, type=int, metavar='N',
@@ -194,9 +194,10 @@ def main(args):
             print(f"=> loading checkpoint '{args.resume}'")
             checkpoint = torch.load(args.resume)
             args.start_epoch = checkpoint['epoch'] + 1
-            best_accuracy = checkpoint['best_accuracy']
-            if args.gpu is not None:
-                best_accuracy = best_accuracy.to(args.gpu)   # best_accuracy may be from a checkpoint from a different GPU
+            best_accuracy = checkpoint['accuracy']['train']
+            #best_accuracy = checkpoint['bestaccuracy']
+            #if args.gpu is not None:
+            #    best_accuracy = best_accuracy.to(args.gpu)   # best_accuracy may be from a checkpoint from a different GPU
             model.load_state_dict(checkpoint['state_dict'])
             optimizer.load_state_dict(checkpoint['optimizer'])
             print(f"=> loaded checkpoint '{args.resume}' (epoch {checkpoint['epoch']})")
