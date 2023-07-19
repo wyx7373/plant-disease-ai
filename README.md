@@ -66,4 +66,4 @@ Example output:
 
 ## Video for setting up the repository and running the model on a test image:
 
-https://youtu.be/BUD57y0pXgI
+![video](https://youtu.be/BUD57y0pXgI)
