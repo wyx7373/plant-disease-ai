@@ -52,7 +52,7 @@ After you have the exported onnx model file, you can run it using a test disease
 python imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/AppleScab1.JPG output.JPG
 `
 
-Example image:
+Example output:
 
 ![image](https://github.com/wyx7373/plant-disease-ai/assets/139377134/92f5bd48-16bd-4616-8425-5b8b18d7032d)
 
