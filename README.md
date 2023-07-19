@@ -29,25 +29,30 @@ Make sure the current directory is the repository folder.
 Run the train.py file in the repository folder using the following command:
 
 `
-python train.py -b=20 --epochs=30 --gpu=0 data/
+python train.py --model-dir=models/ data/
 `
 
-Example command continuing the previous training session:
+Example command specifying epochs and batch size:
 
 `
-python train.py --resume=models/checkpoint.pth.tar -b=20 --epochs=30 --gpu=0 data/
+python train.py --model-dir=models -b=20 --gpu=0 --epochs=25 data
 `
 
 ## Export the model
 Make sure model_best.pth.tar is in the models folder. To export the model, run the onnx_export.py file:
 
 `
-python3 onnx_export.py --model-dir=models/
+python onnx_export.py --model-dir=models/
 `
 
 ## Run the model on a test file
 After you have the exported onnx model file, you can run it using a test diseased leaf image using this command:
 
 `
-imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/AppleCedarRust1.JPG output.JPG
+python imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/AppleScab1.JPG output.JPG
 `
+
+Example image:
+![image](https://github.com/wyx7373/plant-disease-ai/assets/139377134/92f5bd48-16bd-4616-8425-5b8b18d7032d)
+
+
