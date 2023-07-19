@@ -58,5 +58,5 @@ Example output:
 
 
 ## Video for setting up the repository and running the model on a test image:
-![video](https://github.com/wyx7373/plant-disease-ai/assets/139377134/ce945da2-5b0e-4b87-b3e6-211d5331ea89)
+https://github.com/wyx7373/plant-disease-ai/assets/139377134/ce945da2-5b0e-4b87-b3e6-211d5331ea89
 
