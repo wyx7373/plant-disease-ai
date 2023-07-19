@@ -20,7 +20,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 Ubuntu:
 
-`
+```
 wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl
 
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
@@ -28,7 +28,7 @@ sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
 pip3 install Cython
 
 pip3 install numpy==1.19.4 torch-1.8.0-cp36-cp36m-linux_aarch64.whl
-`
+```
 
 ## Train
 Make sure the current directory is the repository folder.
