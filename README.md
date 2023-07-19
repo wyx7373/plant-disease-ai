@@ -58,5 +58,4 @@ Example output:
 
 
 ## Video for setting up the repository and running the model on a test image:
-https://github.com/wyx7373/plant-disease-ai/assets/139377134/ce945da2-5b0e-4b87-b3e6-211d5331ea89
-
+https://github.com/wyx7373/plant-disease-ai/assets/139377134/d74dec08-2038-457e-a92c-7186d0be550a
