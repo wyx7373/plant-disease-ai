@@ -53,6 +53,7 @@ python imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_bl
 `
 
 Example image:
+
 ![image](https://github.com/wyx7373/plant-disease-ai/assets/139377134/92f5bd48-16bd-4616-8425-5b8b18d7032d)
 
 
