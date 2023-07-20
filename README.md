@@ -49,14 +49,14 @@ python train.py --model-dir=models -b=20 --gpu=0 --epochs=25 data
 Make sure model_best.pth.tar is in the models folder. To export the model, run the onnx_export.py file:
 
 `
-python onnx_export.py --model-dir=models/
+python3 onnx_export.py --model-dir=models/
 `
 
 ## Run the model on a test file
 After you have the exported onnx model file, you can run it using a test diseased leaf image using this command:
 
 `
-python imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/AppleScab1.JPG output.JPG
+python3 imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/test/AppleScab1.JPG output.JPG
 `
 
 Example output:
