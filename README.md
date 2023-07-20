@@ -67,3 +67,7 @@ Example output:
 ## Video for setting up the repository and running the model on a test image:
 
 [![video](https://img.youtube.com/vi/BUD57y0pXgI/0.jpg)](https://www.youtube.com/watch?v=BUD57y0pXgI)
+
+## Video for using the GUI for testing the model:
+
+[![video](https://img.youtube.com/vi/-Wmj4ygaOMY/0.jpg)](https://youtu.be/-Wmj4ygaOMY)
